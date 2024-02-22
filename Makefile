@@ -16,7 +16,7 @@ sync_freeswitch:
 	-git clone https://github.com/signalwire/freeswitch _SRC/freeswitch
 
 sync: sync_libks sync_sofia sync_spandsp sync_signalwirec sync_freeswitch
-	-mkdir _SRC
+	-echo ""
 
 build:
 	docker build -t fs_dev_env:latest .
